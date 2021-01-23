@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var sleepTabButton = document.getElementById('sleepTab');
     sleepTabButton.addEventListener('click', function () {
         let min = +(document.getElementById('minutesInput').value);
+        if (min === 0) return;
         let alarmName;
         chrome.tabs.getSelected(null, function (tab) {
             let tabId = tab.id
@@ -55,6 +56,9 @@ document.addEventListener('DOMContentLoaded', function () {
 function showMinutes(minutesLeft) {
     let minutes = Math.trunc(minutesLeft);
     let seconds = Math.trunc((minutesLeft - minutes) * 60);
+    if ('' + seconds < 2) {
+        seconds = '0' + seconds;
+    }
     return `${minutes}:${seconds}`;
 }
 

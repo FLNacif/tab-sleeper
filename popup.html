@@ -4,18 +4,29 @@
 <head>
   <title>Tab Sleeper</title>
   <script src="popup.js"></script>
+  <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
   <h1>Tab Sleeper</h1>
+
   <div id="sleepDiv">
-    <input id="minutesInput" type="number" placeholder="Type minutes to sleep" />
-    <button id="sleepTab">Activate Timer!</button>
+    <div>
+      <input id="minutesInput" type="number" placeholder="in minutes" />
+    </div>
+    <div class="div-sleep">
+      <button class="big-sleep-button" id="sleepTab">Sleep!</button>
+    </div>
   </div>
+
   <div id="cancelDiv" style="display: none;">
-    <p id="timeLeft">00</p> minutes to close.
+    <div>
+      <h2 id="timeLeft">00</h3>
+      <p>minutes to close.</p>
+    </div>
     <button id="cancelSleep">Cancel sleep!</button>
   </div>
+  
 </body>
 
 </html>
