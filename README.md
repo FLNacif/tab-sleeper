@@ -5,4 +5,4 @@ Tab sleeper is a chrome extension that allows you to proggram a tab to close aut
 
 ![alt text](https://github.com/flnacif/tab-sleeper/blob/main/img/sleep.png?raw=true)
 
-![alt text](https://github.com/flnacif/tab-sleeper/blob/main/img/canel-sleep.png?raw=true)
+![alt text](https://github.com/flnacif/tab-sleeper/blob/main/img/cancel-sleep.png?raw=true)
